@@ -1,0 +1,89 @@
+/* == AREA PRINCIPAL DA APLICAÇÃO == */
+
+.all-content {
+    background-color: #ffffff;
+    max-width: 80%;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+}
+
+
+/* == INSTRUÇÕES DA APLICAÇÃO ==*/
+
+.instructions {
+    max-width: 48%;
+}
+
+.instructions h1 {
+    color: #404040;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.instructions p {
+    color: #7a7a7a;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.instructions p span {
+    font-style: italic;
+}
+
+
+/* == CAMPO QUE CARREGARÁ A TABELA FIPE ==*/
+
+.fipe {
+    background-color: #eaeaea;
+    height: 55vh;
+    width: auto;
+    border-radius: 5px;
+}
+
+
+/*== IMAGEM - CARRO ==*/
+
+.fipe-before {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/* == DADOS FIPE DA API ==*/
+
+.fipe-after {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.fipe-after button {
+    position: absolute;
+    top: 3%;
+    right: 6%;
+}
+
+.fipe-after h1 {
+    color: #404040;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: thin solid #cacaca;
+}
+
+.fipe-after h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.fipe-after h3 {
+    color: #686868;
+    font-size: 14px;
+}
+
+.fipe-after p {
+    color: #686868;
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 22px;
+}

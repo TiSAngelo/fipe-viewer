@@ -1,0 +1,36 @@
+<p *ngIf="erro">
+    <ngb-alert [dismissible]="false">
+        <strong>Warning!</strong> Desculpe, mas não conseguimos acessar os dados FIPE no momento.
+    </ngb-alert>
+</p>
+
+<div class="row mx-auto mt-4 all-content">
+    <div class="col-sm-6 p-5 instructions">
+        <h1 class="instructions-title mb-4">FrontEnd Angular + Bootstrap + API</h1>
+        <p>Este é um simples teste onde você deverá criar um novo projeto em Angular 9+ com Bootstrap.</p>
+        <p>Inicie um novo projeto Angular e posteriormente instale a dependência @ng-bootstrap. Com o projeto criado reproduza esta interface com HTML e CSS de forma <strong>responsiva e da maneira mais fiel possível.</strong></p>
+        <p>Ao clicar no botão abaixo, a aplicação deverá realizar uma requisição GET para a API e exibir o resultado na caixa ao lado.</p>
+        <p><span>* Qualquer efeito na UI que melhore a experiência do usuário é bem vinda.</span></p>
+        <div class="text-center"><button (click)="getter()" type="button" class="btn btn-primary mt-4">Consultar tabela Fipe</button></div>
+    </div>
+    <div class="col-sm-6 my-auto p-4 show-data">
+        <div class="fipe">
+            <div class="fipe-before" *ngIf="!sucesso">
+                <img src="./../../assets/car 1.png" alt="Carro genérico" class="mx-auto d-block">
+            </div>
+            <div class="px-4 fipe-after" *ngIf="sucesso">
+                <button (click)="closeFipe()" type="button" class="close pt-3" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="fipe-after-data">
+                    <h3 class="pt-5">{{fipe.Marca}}</h3>
+                    <h1 class="pb-3">{{fipe.Modelo}}</h1>
+                    <p><strong>Ano de Fabricação:</strong>{{fipe.AnoModelo}}</p>
+                    <p><strong>Combustível:</strong>{{fipe.Combustivel}}</p>
+                    <p><strong>Código FIPE:</strong>{{fipe.CodigoFipe}}</p>
+                    <h2 class="text-primary mt-2">{{fipe.Valor}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
