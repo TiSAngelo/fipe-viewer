@@ -70,6 +70,10 @@
     }
 }
 
+.fipe-after-data {
+    width: 100%;
+}
+
 .fipe-after h1 {
     color: #404040;
     font-size: 24px;
